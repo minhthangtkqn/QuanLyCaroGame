@@ -1,0 +1,14 @@
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\bin\Debug\BUS.dll.config
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\bin\Debug\BUS.dll
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\bin\Debug\BUS.pdb
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\bin\Debug\DAO.dll
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\bin\Debug\DTO.dll
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\bin\Debug\EntityFramework.dll
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\bin\Debug\EntityFramework.SqlServer.dll
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\bin\Debug\DAO.pdb
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\bin\Debug\DTO.pdb
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\bin\Debug\EntityFramework.xml
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\bin\Debug\EntityFramework.SqlServer.xml
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\obj\Debug\BUS.dll
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\BUS\obj\Debug\BUS.pdb

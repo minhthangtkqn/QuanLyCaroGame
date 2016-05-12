@@ -1,0 +1,12 @@
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\bin\Debug\DAO.dll.config
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\bin\Debug\DAO.dll
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\bin\Debug\DAO.pdb
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\bin\Debug\DTO.dll
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\bin\Debug\EntityFramework.dll
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\bin\Debug\EntityFramework.SqlServer.dll
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\bin\Debug\DTO.pdb
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\bin\Debug\EntityFramework.xml
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\bin\Debug\EntityFramework.SqlServer.xml
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\obj\Debug\DAO.dll
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\DAO\obj\Debug\DAO.pdb
