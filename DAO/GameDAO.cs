@@ -60,7 +60,6 @@ namespace DAO
 
         public bool updateGameDAO(int gameID, bool result, int time)
         {
-
             try
             {
                 DbConTextCaroGame db = new DbConTextCaroGame();

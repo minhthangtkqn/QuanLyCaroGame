@@ -22,6 +22,10 @@ namespace QuanLyCaroGame
         string Username, hoTen, capDo;
         bool gioiTinh;
 
+        string gameID;
+        bool ketQua;
+        int thoiGian;
+
         public FormQL(String username)
         {
             InitializeComponent();
@@ -31,7 +35,7 @@ namespace QuanLyCaroGame
             //Khong cho chinh sua cac text box
             khoaTextBox();
 
-            //chi duoc sua, xoa du lieu khi da chon
+            //chỉ được chỉnh sửa, xóa khi đã chọn 1 hàng
             khoaButton();
 
             setValueToTextBox();
@@ -129,17 +133,27 @@ namespace QuanLyCaroGame
         {
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
-            
+
+            ketQua = false;
+
+            gameID = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            string result = dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim();
+            if (result == "Thắng")
+            {
+                ketQua = true;
+            }
+            thoiGian = Int32.Parse(dataGridView1.CurrentRow.Cells[3].Value.ToString());
+            return;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            (new Thread(new ThreadStart(RunFormEdit))).Start();
+            (new Thread(new ThreadStart(RunFormSuaGame))).Start();
         }
 
-        private void RunFormEdit(bool result, int time)
+        private void RunFormSuaGame()
         {
-            Application.Run(new FormUpdate(Username, gioiTinh, hoTen, capDo));
+            Application.Run(new FormSuaGame(gameID, ketQua, thoiGian));
         }
     }
 }

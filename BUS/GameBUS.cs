@@ -29,5 +29,7 @@ namespace BUS
             GameDAO game = new GameDAO();
             return game.updateGameDAO(gameID, result, time);
         }
+
+        
     }
 }

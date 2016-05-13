@@ -46,7 +46,7 @@ namespace QuanLyCaroGame
 
             if (!User.themUserBUSS(username, password, hoTen, gioiTinh, 1))
             {
-                MessageBox.Show("Đăng ký không thành công (>_<)", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Đăng ký không thành công (>_<)", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 (new Thread(new ThreadStart(RunFormLogin))).Start();
                 this.Close();
             }
