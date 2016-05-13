@@ -23,6 +23,7 @@ namespace DAO
             dt.Columns.Add("Kết quả");
             dt.Columns.Add("Thời gian trận đấu (phút)");
 
+
             for (int i = 0; i < games.Count; i++)
             {
                 dt.Rows.Add();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQL));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtGioiTinh = new System.Windows.Forms.TextBox();
@@ -44,6 +45,7 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sửaThôngTinNgườiChơiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchTrậnĐấuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,7 +53,6 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThemGame = new System.Windows.Forms.Button();
-            this.sửaThôngTinNgườiChơiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -211,6 +212,13 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.fileToolStripMenuItem.Text = "&Thông tin";
             // 
+            // sửaThôngTinNgườiChơiToolStripMenuItem
+            // 
+            this.sửaThôngTinNgườiChơiToolStripMenuItem.Name = "sửaThôngTinNgườiChơiToolStripMenuItem";
+            this.sửaThôngTinNgườiChơiToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.sửaThôngTinNgườiChơiToolStripMenuItem.Text = "Sửa thông tin người chơi";
+            this.sửaThôngTinNgườiChơiToolStripMenuItem.Click += new System.EventHandler(this.sửaThôngTinNgườiChơiToolStripMenuItem_Click);
+            // 
             // danhSáchTrậnĐấuToolStripMenuItem
             // 
             this.danhSáchTrậnĐấuToolStripMenuItem.Name = "danhSáchTrậnĐấuToolStripMenuItem";
@@ -241,7 +249,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -265,13 +273,6 @@
             this.btnThemGame.UseVisualStyleBackColor = true;
             this.btnThemGame.Click += new System.EventHandler(this.btnThemGame_Click);
             // 
-            // sửaThôngTinNgườiChơiToolStripMenuItem
-            // 
-            this.sửaThôngTinNgườiChơiToolStripMenuItem.Name = "sửaThôngTinNgườiChơiToolStripMenuItem";
-            this.sửaThôngTinNgườiChơiToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.sửaThôngTinNgườiChơiToolStripMenuItem.Text = "Sửa thông tin người chơi";
-            this.sửaThôngTinNgườiChơiToolStripMenuItem.Click += new System.EventHandler(this.sửaThôngTinNgườiChơiToolStripMenuItem_Click);
-            // 
             // FormQL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,9 +285,10 @@
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormQL";
-            this.Text = "FormQL";
+            this.Text = "Quản Lý Game Caro";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

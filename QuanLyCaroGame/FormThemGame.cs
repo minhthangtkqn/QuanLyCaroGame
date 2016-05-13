@@ -46,7 +46,7 @@ namespace QuanLyCaroGame
         {
             //lấy thông tin từ combo box và radio button
             ketQua = radioThang.Checked;
-            thoiGian = Int32.Parse(comboThoiGian.SelectedItem.ToString());
+            thoiGian = Int32.Parse(comboThoiGian.Text);
 
             //thêm vào CSDL và thông báo kết quả
             GameBUS game = new GameBUS();

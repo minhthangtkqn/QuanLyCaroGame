@@ -33,6 +33,7 @@ namespace QuanLyCaroGame
 
             us = User.getUserBUS(username);
             
+
             
             //Khong cho chinh sua cac text box
             khoaTextBox();
@@ -101,6 +102,10 @@ namespace QuanLyCaroGame
         {
             GameBUS game = new GameBUS();
             dataGridView1.DataSource = game.getThongTinGameBUS(Username);
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                dataGridView1.Columns[i].Width = 170;
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSuaGame));
             this.radioThang = new System.Windows.Forms.RadioButton();
             this.radioThua = new System.Windows.Forms.RadioButton();
             this.txtTime = new System.Windows.Forms.TextBox();
@@ -118,6 +119,7 @@
             this.Controls.Add(this.txtTime);
             this.Controls.Add(this.radioThua);
             this.Controls.Add(this.radioThang);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSuaGame";
             this.Text = "Hiệu chỉnh thông tin trận đấu";
             this.ResumeLayout(false);
