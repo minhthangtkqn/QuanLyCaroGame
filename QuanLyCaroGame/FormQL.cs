@@ -29,8 +29,10 @@ namespace QuanLyCaroGame
         public FormQL(String username)
         {
             InitializeComponent();
-            us = User.getUserBUS(username);
             Username = username;
+
+            us = User.getUserBUS(username);
+            
             
             //Khong cho chinh sua cac text box
             khoaTextBox();
@@ -39,6 +41,8 @@ namespace QuanLyCaroGame
             khoaButton();
 
             setValueToTextBox();
+
+            ReLoad();
 
         }
 
@@ -88,22 +92,12 @@ namespace QuanLyCaroGame
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            (new Thread(new ThreadStart(RunFormUpdate))).Start();
-            this.Close();
+            FormUpdate capNhat = new FormUpdate(Username, gioiTinh, hoTen, capDo);
+            capNhat.ShowDialog();
         }
 
-
-        private void RunFormUpdate()
-        {
-            Application.Run(new FormUpdate(Username, gioiTinh, hoTen, capDo));
-        }
 
         private void ReLoad()
-        {
-            btnDSGame_Click(new object(), new EventArgs());
-        }
-
-        private void btnDSGame_Click(object sender, EventArgs e)
         {
             GameBUS game = new GameBUS();
             dataGridView1.DataSource = game.getThongTinGameBUS(Username);
@@ -126,7 +120,6 @@ namespace QuanLyCaroGame
                 
             }
 
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -148,12 +141,47 @@ namespace QuanLyCaroGame
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            (new Thread(new ThreadStart(RunFormSuaGame))).Start();
+            //(new Thread(new ThreadStart(RunFormSuaGame))).Start();
+            FormSuaGame suaGame = new FormSuaGame(gameID, ketQua, thoiGian);
+            suaGame.ShowDialog();
         }
 
         private void RunFormSuaGame()
         {
             Application.Run(new FormSuaGame(gameID, ketQua, thoiGian));
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sinh viên: Hoàng Minh Thắng\nClass: 13TCLC", "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void danhSáchTrậnĐấuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnRefresh_Click(null, null);
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            ReLoad();
+            us = User.getUserBUS(Username);
+            setValueToTextBox();
+        }
+
+        private void btnThemGame_Click(object sender, EventArgs e)
+        {
+            FormThemGame themGame = new FormThemGame(Username);
+            themGame.ShowDialog();
+        }
+
+        private void sửaThôngTinNgườiChơiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnCapNhat_Click(null, null);
         }
     }
 }

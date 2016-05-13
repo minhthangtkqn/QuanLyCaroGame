@@ -78,5 +78,24 @@ namespace DAO
                 return false;
             }
         }
+
+
+        public bool addGameDAO(string username, bool result, int time)
+        {
+            try
+            {
+                DbConTextCaroGame db = new DbConTextCaroGame();
+                GAME game = new GAME(username, result, time);
+                db.games.Add(game);
+                db.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
     }
 }

@@ -30,6 +30,12 @@ namespace BUS
             return game.updateGameDAO(gameID, result, time);
         }
 
+
+        public bool addGameBUS(string username, bool result, int time)
+        {
+            GameDAO game = new GameDAO();
+            return game.addGameDAO(username, result, time);
+        }
         
     }
 }

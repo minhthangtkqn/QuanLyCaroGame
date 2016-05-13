@@ -24,6 +24,8 @@ namespace QuanLyCaroGame
         public FormUpdate(string username, bool gioiTinh, string hoTen, string CapDo)
         {
             InitializeComponent();
+            AcceptButton = btnCapNhat;
+
 
             Username = username;
             txtHoTen.Text = hoTen;
@@ -47,22 +49,18 @@ namespace QuanLyCaroGame
 
             if(check)
             {
-                (new Thread(new ThreadStart(RunFormQL))).Start();
+                MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Không thể cập nhập dữ liệu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Không thể cập nhập dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Close();
             }
+
+
         }
 
 
-        private void RunFormQL()
-        {
-            Application.Run(new FormQL(Username));
-        }
-
-        
     }
 }

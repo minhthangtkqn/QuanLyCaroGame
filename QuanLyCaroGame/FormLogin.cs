@@ -77,15 +77,16 @@ namespace QuanLyCaroGame
             return validate;
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            (new Thread(new ThreadStart(RunFormDangKy))).Start();
-            this.Close();
-        }
 
         private void RunFormDangKy()
         {
             Application.Run(new FormRegister());
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormRegister dangKy = new FormRegister();
+            dangKy.ShowDialog();
         }
     }
 }

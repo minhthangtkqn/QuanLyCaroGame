@@ -13,11 +13,6 @@ namespace DAO
         public USER getUserDAO(string username)
         {
             DbConTextCaroGame db = new DbConTextCaroGame();
-            //var p = from k in db.users where k.username == username select k;
-            //return p.ToArray()[0];
-
-            //var p = (from k in db.users where k.username == username select k).First();
-            //return p;
 
             return db.users.FirstOrDefault(x => x.username == username);
         }
@@ -43,33 +38,6 @@ namespace DAO
             }
             return false;
         }
-
-
-        //public string getHoTenDAO(string Username)
-        //{
-        //    DbConTextCaroGame db = new DbConTextCaroGame();
-
-        //    var hoTen = (from t in db.users where t.username == Username select t.HoTen);
-        //    return hoTen.ToArray()[0];
-        //}
-
-
-        //public int getCapDoDAO(string username)
-        //{
-        //    DbConTextCaroGame db = new DbConTextCaroGame();
-
-        //    var Cap = (from t in db.users where t.username == username select t.CapDo);
-        //    return Cap.ToArray()[0];
-        //}
-
-
-        //public bool getGioiTinhDAO(string Username)
-        //{
-        //    DbConTextCaroGame db = new DbConTextCaroGame();
-
-        //    var GT = (from t in db.users where t.username == Username select t.GioiTinh);
-        //    return GT.ToArray()[0];
-        //}
 
 
         public bool updateDAO(string username, bool gioiTinh, string hoTen, int capDo)

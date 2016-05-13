@@ -124,10 +124,10 @@
             // 
             // btnDangKy
             // 
-            this.btnDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangKy.Location = new System.Drawing.Point(16, 284);
+            this.btnDangKy.Font = new System.Drawing.Font("MS Reference Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangKy.Location = new System.Drawing.Point(16, 274);
             this.btnDangKy.Name = "btnDangKy";
-            this.btnDangKy.Size = new System.Drawing.Size(289, 23);
+            this.btnDangKy.Size = new System.Drawing.Size(289, 37);
             this.btnDangKy.TabIndex = 8;
             this.btnDangKy.Text = "ĐĂNG KÝ";
             this.btnDangKy.UseVisualStyleBackColor = true;
@@ -152,10 +152,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(98, 22);
+            this.label6.Font = new System.Drawing.Font("MS Reference Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(85, 13);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 29);
+            this.label6.Size = new System.Drawing.Size(151, 33);
             this.label6.TabIndex = 11;
             this.label6.Text = "ĐĂNG KÝ";
             // 

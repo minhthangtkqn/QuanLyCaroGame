@@ -7,4 +7,3 @@ F:\Visual Studio 2013\Projects\QuanLyCaroGame\DTO\bin\Debug\EntityFramework.xml
 F:\Visual Studio 2013\Projects\QuanLyCaroGame\DTO\bin\Debug\EntityFramework.SqlServer.xml
 F:\Visual Studio 2013\Projects\QuanLyCaroGame\DTO\obj\Debug\DTO.dll
 F:\Visual Studio 2013\Projects\QuanLyCaroGame\DTO\obj\Debug\DTO.pdb
-F:\Visual Studio 2013\Projects\QuanLyCaroGame\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

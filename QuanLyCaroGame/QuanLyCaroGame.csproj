@@ -75,6 +75,12 @@
     <Compile Include="FormSuaGame.Designer.cs">
       <DependentUpon>FormSuaGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormThemGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemGame.Designer.cs">
+      <DependentUpon>FormThemGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     <EmbeddedResource Include="FormSuaGame.resx">
       <DependentUpon>FormSuaGame.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormThemGame.resx">
+      <DependentUpon>FormThemGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormUpdate.resx">
       <DependentUpon>FormUpdate.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +115,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -130,6 +140,9 @@
       <Project>{39c328f8-3034-4d21-8c12-cde3dc165932}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\com.nmcorp.carochess-w150.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
