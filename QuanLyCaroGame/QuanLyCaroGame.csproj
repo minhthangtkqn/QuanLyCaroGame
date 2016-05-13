@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegister.Designer.cs">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,18 @@
     <Compile Include="FormQL.Designer.cs">
       <DependentUpon>FormQL.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSuaGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuaGame.Designer.cs">
+      <DependentUpon>FormSuaGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormLogin.resx">
@@ -70,6 +88,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormQL.resx">
       <DependentUpon>FormQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegister.resx">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuaGame.resx">
+      <DependentUpon>FormSuaGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -18,3 +18,5 @@ F:\Visual Studio 2013\Projects\QuanLyCaroGame\QuanLyCaroGame\bin\Debug\DAO.dll
 F:\Visual Studio 2013\Projects\QuanLyCaroGame\QuanLyCaroGame\bin\Debug\BUS.pdb
 F:\Visual Studio 2013\Projects\QuanLyCaroGame\QuanLyCaroGame\bin\Debug\DTO.pdb
 F:\Visual Studio 2013\Projects\QuanLyCaroGame\QuanLyCaroGame\bin\Debug\DAO.pdb
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\QuanLyCaroGame\obj\Debug\QuanLyCaroGame.FormUpdate.resources
+F:\Visual Studio 2013\Projects\QuanLyCaroGame\QuanLyCaroGame\obj\Debug\QuanLyCaroGame.FormRegister.resources

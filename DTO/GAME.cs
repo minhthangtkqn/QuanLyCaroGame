@@ -11,6 +11,19 @@ namespace DTO
 {
     public class GAME
     {
+        public GAME()
+        {
+
+        }
+
+        public GAME(string username, bool result, int time)
+        {
+            this.username = username;
+            this.result = result;
+            this.time = time;
+        }
+
+
         [Key]
         public int gameID { get; set; }
         public string username { get; set; }

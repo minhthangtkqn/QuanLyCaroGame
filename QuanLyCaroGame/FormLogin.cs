@@ -25,9 +25,17 @@ namespace QuanLyCaroGame
             AcceptButton = btnLogin;
         }
 
+        public FormLogin(string username, string password)
+        {
+            InitializeComponent();
+            txtUsername.Text = username;
+            txtPassword.Text = password;
+            AcceptButton = btnLogin;
+        }
+
         private void FormLogin_Load(object sender, EventArgs e)
         {
-            //user.getUserBUS("minhthang");
+
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -35,7 +43,7 @@ namespace QuanLyCaroGame
             Username = txtUsername.Text;
             if (!LoginValidate())
             {
-                MessageBox.Show("Vui long nhap day du cac o", "Thong bao", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -49,7 +57,7 @@ namespace QuanLyCaroGame
             }
             else
             {
-                MessageBox.Show(this, "Tai khoan hoac mat khau khong dung.");
+                MessageBox.Show(this, "Tài khoản hoặc mật khẩu không đúng.");
             }
         }
 
@@ -67,6 +75,17 @@ namespace QuanLyCaroGame
                 validate = false;
 
             return validate;
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            (new Thread(new ThreadStart(RunFormDangKy))).Start();
+            this.Close();
+        }
+
+        private void RunFormDangKy()
+        {
+            Application.Run(new FormRegister());
         }
     }
 }
